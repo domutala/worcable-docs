@@ -212,7 +212,8 @@
       "vision": {
         "badge": "**Vision**",
         "title": "**Recruitment as Code**",
-        "description": "Le recrutement doit être **versionnable**, **auditable** et **adaptable** — comme votre code. Worcable applique les **principes de l’ingénierie** au recrutement."
+        "description": "Le recrutement doit être **versionnable**, **auditable** et **adaptable** — comme votre code. Worcable applique les **principes de l’ingénierie** au recrutement.",
+        "cta_primary": "Contribuer"
       },
 
       "cta": {

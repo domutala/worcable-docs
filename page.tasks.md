@@ -1,7 +1,7 @@
 # Pages
 
 [x] home
-[ ] why-open-source
+[x] why-open-source
 [ ] contact
 [ ] roadmap
 [ ] pricing

@@ -119,9 +119,29 @@ const whyOpenSourceIcons = {
 
   <Container>
     <div class="relative block px-5 md:px-10 py-8 md:py-20">
-      <u-page-grid>
-        <div class="lg:col-span-2 col-span-3 not-lg:order-1">
+      <div class="mx-auto max-w-210">
+        <h2 class="font- text-2xl">
+          <u-icon
+            :name="whyOpenSourceIcons.problem.icon"
+            class="size- opacity- text-red-500"
+          />
+
+          <MDC :value="$t('pages.why_open_source.problem.title')" unwrap="p" />
+        </h2>
+
+        <p class="mt-5 text-xl">
+          <MDC :value="$t('pages.why_open_source.problem.description')" />
+        </p>
+      </div>
+
+      <u-page-grid class="hidden">
+        <div class="lg:col-span-2 col-span-3 not-lg:order-1 mx-auto">
           <h2 class="font- text-2xl max-w-160">
+            <u-icon
+              :name="whyOpenSourceIcons.problem.icon"
+              class="size- opacity- text-red-500"
+            />
+
             <MDC
               :value="$t('pages.why_open_source.problem.title')"
               unwrap="p"
@@ -131,15 +151,6 @@ const whyOpenSourceIcons = {
           <p class="mt-5 text-xl">
             <MDC :value="$t('pages.why_open_source.problem.description')" />
           </p>
-        </div>
-
-        <div
-          class="flex justify-center not-lg:justify-start items-center not-lg:col-span-3"
-        >
-          <u-icon
-            :name="whyOpenSourceIcons.problem.icon"
-            class="size-16 md:size-24 opacity-20 text-red-500"
-          />
         </div>
       </u-page-grid>
     </div>
@@ -196,5 +207,69 @@ const whyOpenSourceIcons = {
         </div>
       </div>
     </div>
+  </Container>
+
+  <Container>
+    <div
+      class="flex flex-wrap not-lg:flex-col lg:divide-x divide-y divide-default"
+    >
+      <div
+        v-for="(pillar, code) in whyOpenSourceIcons.technical"
+        :key="code"
+        class="border-default w-full lg:w-1/3 group/link-anime px-5 md:px-10 py-5 flex flex-col gap-2 lg:border-b-0"
+      >
+        <div>
+          <u-icon :name="pillar.icon" class="size-8 opacity-50" />
+        </div>
+
+        <div>
+          <MDC
+            unwrap="p"
+            tag="h3"
+            :value="$t(`pages.why_open_source.technical.items.${code}.title`)"
+            class="text-xl"
+          />
+
+          <MDC
+            class="opacity-80 max-w-180"
+            unwrap="p"
+            tag="p"
+            :value="
+              $t(`pages.why_open_source.technical.items.${code}.description`)
+            "
+          />
+        </div>
+      </div>
+    </div>
+  </Container>
+
+  <Container>
+    <u-container class="py-20 text-center max-w-4xl">
+      <MDC
+        :value="$t('pages.why_open_source.vision.title')"
+        unwrap="p"
+        tag="h2"
+        class="font-bold text-primary"
+      />
+
+      <MDC
+        :value="$t('pages.why_open_source.vision.description')"
+        class="mt-3 text-3xl leading-[1.3]"
+        tag="p"
+        unwrap="p"
+      />
+
+      <u-button
+        :href="contribueUrl"
+        target="_blank"
+        size="xl"
+        color="primary"
+        variant="solid"
+        class="p-3 px-4 rounded-4xl mt-5"
+        icon="i-lucide-file-pen"
+      >
+        {{ $t("pages.why_open_source.vision.cta_primary") }}
+      </u-button>
+    </u-container>
   </Container>
 </template>
