@@ -78,13 +78,13 @@ const items = ref<NavigationMenuItem[]>([
     }),
   },
 
-  {
-    label: "GitHub",
-    icon: "i-simple-icons-github",
-    // badge: "6k",
-    to: repository,
-    target: "_blank",
-  },
+  // {
+  //   label: "GitHub",
+  //   icon: "i-simple-icons-github",
+  //   // badge: "6k",
+  //   to: repository,
+  //   target: "_blank",
+  // },
 ]);
 </script>
 

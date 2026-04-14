@@ -47,7 +47,7 @@ useSwiper(featureCarousel, {
       <MDC
         :value="$t('pages.index.hero.badge')"
         unwrap="p"
-        class="bg-primary-50 text-primary inline w-max px-1.5 py-0.5"
+        class="bg-primary/20 light:text-primary dark:bg-black inline w-max py-1 px-2"
       />
 
       <MDC

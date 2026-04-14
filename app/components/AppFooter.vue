@@ -45,18 +45,6 @@ const { footer, links } = useAppConfig();
       </div>
     </div>
 
-    <!-- <template #left>
-      <NuxtLink :to="$localePath(footer.to)" class="block">
-        <AppLogo class="w-auto h-6 shrink-0" />
-      </NuxtLink>
-
-     </template> -->
-
-    <!-- <template #right>
-      <AppLocale />
-      <AppTheme />
-    </template> -->
-
     <template #bottom>
       <div class="flex flex-wrap gap-1 items-center w-full">
         <div class="mr-auto">
