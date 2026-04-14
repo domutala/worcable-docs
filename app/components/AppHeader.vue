@@ -5,7 +5,7 @@
     class="border-b-0 bg-transparent"
     mode="slideover"
     :ui="{
-      center: 'flex-1 mt-auto',
+      center: 'flex-1',
       container: 'max-w-full',
       content: 'max-w-80 ui-scroll overflow-auto',
     }"
@@ -18,29 +18,59 @@
     <AppMenu />
 
     <template #right>
-      <UButton
-        :to="$localePath({ name: 'docs-slug', params: { slug: 'deployment' } })"
-        size="xl"
-        variant="soft"
-        color="neutral"
-        class="rounded-4xl cursor-pointer border border-default"
-      >
-        {{ $t("header.get_started") }}
-      </UButton>
+      <div class="hidden sm:flex items-center gap-2">
+        <UButton
+          :to="
+            $localePath({ name: 'docs-slug', params: { slug: 'deployment' } })
+          "
+          size="xl"
+          variant="soft"
+          color="neutral"
+          class="rounded-4xl cursor-pointer border border-default"
+        >
+          {{ $t("header.get_started") }}
+        </UButton>
 
-      <UButton
-        :to="$localePath({ name: 'book-demo' })"
-        size="xl"
-        variant="solid"
-        color="primary"
-        class="rounded-4xl cursor-pointer"
-      >
-        {{ $t("header.book_demo") }}
-      </UButton>
+        <UButton
+          :to="$localePath({ name: 'book-demo' })"
+          size="xl"
+          variant="solid"
+          color="primary"
+          class="rounded-4xl cursor-pointer"
+        >
+          {{ $t("header.book_demo") }}
+        </UButton>
+      </div>
     </template>
 
     <template #content>
-      <AppMenu orientation="vertical" class="p-2.5" />
+      <div class="flex flex-col h-full">
+        <AppMenu orientation="vertical" class="p-2.5" />
+
+        <div class="flex items-center justify-center gap-3 mt-auto p-3">
+          <UButton
+            :to="
+              $localePath({ name: 'docs-slug', params: { slug: 'deployment' } })
+            "
+            size="xl"
+            variant="soft"
+            color="neutral"
+            class="rounded-4xl cursor-pointer border border-default"
+          >
+            {{ $t("header.get_started") }}
+          </UButton>
+
+          <UButton
+            :to="$localePath({ name: 'book-demo' })"
+            size="xl"
+            variant="solid"
+            color="primary"
+            class="rounded-4xl cursor-pointer"
+          >
+            {{ $t("header.book_demo") }}
+          </UButton>
+        </div>
+      </div>
     </template>
   </UHeader>
 </template>

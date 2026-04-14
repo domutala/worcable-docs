@@ -90,10 +90,10 @@ const items = ref<NavigationMenuItem[]>([
 
 <template>
   <UNavigationMenu
-    highlight
     variant="link"
     :items
     :ui="{
+      link: 'cursor-pointer',
       viewport: 'rounded-none ring-0 shadow-none! bg-transparent',
       viewportWrapper:
         'fixed max-w-[calc(var(--ui-app-container)-2px)] left-1/2 -translate-x-1/2 top-[calc(100%+0.5px)]',

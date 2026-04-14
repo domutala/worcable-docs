@@ -29,7 +29,7 @@
       <div
         class="relative z-10 w-full flex flex-col justify-start items-center gap-5 px-5 sm:px-0 py-10 md:py-30 mx-auto max-w-210"
       >
-        <h2 class="text-center text-5xl">
+        <h2 class="text-center text-2xl md:text-5xl">
           <MDC :value="$t('book_demo.title')" unwrap="p" />
         </h2>
 

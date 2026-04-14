@@ -43,22 +43,26 @@ useSwiper(featureCarousel, {
   <Container :ui="{ content: 'min-h-' }">
     <template #top> </template>
 
-    <u-container class="py-36 text-center">
-      <UBadge color="primary" size="lg" variant="soft" class="mb-3">
-        <MDC :value="$t('pages.index.hero.badge')" unwrap="p" />
-      </UBadge>
+    <u-container class="py-10 md:py-36 md:text-center">
+      <MDC
+        :value="$t('pages.index.hero.badge')"
+        unwrap="p"
+        class="bg-primary-50 text-primary inline w-max px-1.5 py-0.5"
+      />
 
-      <h1 class="text-4xl md:text-6xl font-bold max-w-200 mx-auto">
-        <MDC :value="$t('pages.index.hero.title')" unwrap="p" />
-      </h1>
+      <MDC
+        :value="$t('pages.index.hero.title')"
+        unwrap="p"
+        tag="h1"
+        class="text-4xl md:text-6xl font-bold max-w-200 mx-auto mt-3"
+      />
 
-      <p class="mt-5 text-2xl max-w-230 mx-auto">
-        <MDC :value="$t('pages.index.hero.subtitle')" unwrap="p" />
-      </p>
+      <MDC
+        :value="$t('pages.index.hero.subtitle')"
+        class="mt-5 text-2xl max-w-230 mx-auto"
+      />
 
-      <div
-        class="flex items-center gap-2 sm:flex-row flex-col justify-center pt-10"
-      >
+      <div class="flex flex-wrap items-center gap-2 sm:justify-center">
         <u-button
           :to="
             $localePath({ name: 'docs-slug', params: { slug: 'deployment' } })
@@ -66,10 +70,9 @@ useSwiper(featureCarousel, {
           size="xl"
           color="primary"
           variant="solid"
-          class="p-3 px-4 rounded-4xl"
+          class="p-3 px-4 rounded-4xl not-md:w-"
           icon="i-lucide-rocket"
         >
-          <!-- icon="i-lucide-newspaper" -->
           {{ $t("pages.index.hero.cta_primary") }}
         </u-button>
         <u-button
@@ -78,7 +81,7 @@ useSwiper(featureCarousel, {
           size="xl"
           variant="solid"
           color="neutral"
-          class="border-default p-3 px-4 rounded-4xl"
+          class="border-default p-3 px-4 rounded-4xl not-md:w-"
         >
           {{ $t("pages.index.hero.cta_secondary") }}
         </u-button>
@@ -113,7 +116,7 @@ useSwiper(featureCarousel, {
         :label="$t('words.know_more')"
         :key="code"
         :to="$localePath(advantage.to)"
-        class="border-default w-full group/link-anime px-10 py-5 flex flex-col gap-2 hover:highlighted"
+        class="border-default w-full group/link-anime px-5 md:px-10 py-5 flex flex-col gap-2 hover:highlighted"
       >
         <div>
           <u-icon :name="advantage.icon" class="size-8 opacity-50" />
@@ -161,7 +164,7 @@ useSwiper(featureCarousel, {
     </div>
   </Container>
 
-  <Container :ui="{ content: 'bg-' }">
+  <Container>
     <u-container class="py-20 text-center max-w-4xl">
       <div
         class="flex items-center mb-4 w-max gap-1 bg-primary px-1 text-white mx-auto"
@@ -169,7 +172,7 @@ useSwiper(featureCarousel, {
         {{ $t("pages.index.features.badge") }}
       </div>
 
-      <h2 class="font-bold text-6xl">
+      <h2 class="font-bold text-4xl md:text-6xl">
         <MDC :value="$t('pages.index.features.title')" unwrap="p" />
       </h2>
 
@@ -178,14 +181,14 @@ useSwiper(featureCarousel, {
       </p>
     </u-container>
   </Container>
-  <Container :ui="{ content: 'bg-' }">
+  <Container>
     <div class="flex flex-wrap divide-x divide-y divide-default">
       <AppLinkBox
         v-for="idx in features"
         :key="idx"
         :to="$localePath(Features[idx]!.page)"
         link-to-label
-        class="w-full md:w-1/2 flex flex-col text-left lg:nth-[3]:border-b-0 lg:nth-[2]:border-r-0 p-10"
+        class="w-full md:w-1/2 flex flex-col text-left lg:nth-[3]:border-b-0 lg:nth-[2]:border-r-0 p-5 md:p-10"
       >
         <div class="max-w-120 mb-auto pb-5">
           <u-icon :name="Features[idx]?.icon" class="size-10 mb-4" />
@@ -257,7 +260,7 @@ useSwiper(featureCarousel, {
   <Container :ui="{ content: 'group/deployment' }">
     <AppLinkBox
       :to="$localePath(Features.deployment!.page)"
-      class="relative block px-10 py-10"
+      class="relative block p-5 md:p-10"
       link-to-label
     >
       <u-page-grid>
@@ -284,7 +287,9 @@ useSwiper(featureCarousel, {
             {{ $t("pages.index.deployment.badge") }}
           </div>
 
-          <h2 class="font-bold text-5xl light:text-primary max-w-160 ml-auto">
+          <h2
+            class="font-bold text-3xl md:text-5xl light:text-primary max-w-160 ml-auto"
+          >
             <MDC :value="$t('pages.index.deployment.title')" unwrap="p" />
           </h2>
 
@@ -294,7 +299,7 @@ useSwiper(featureCarousel, {
         </div>
       </u-page-grid>
 
-      <div class="flex items-center justify- pb-5">
+      <div class="flex items-center pb-5">
         <div
           class="bg-surface border-default flex items-center justify-center gap-0 px-2 py-1 max-w-11/12 rounded-lg mt-5 cursor-copy"
           @click="
@@ -320,7 +325,7 @@ useSwiper(featureCarousel, {
     <AppLinkBox
       :label="$t('pages.index.open_source.cta_secondary')"
       :to="$localePath({ name: 'why-open-source' })"
-      class="relative block px-10 py-10"
+      class="relative block p-10 md-5"
       link-to-label
     >
       <u-page-grid>
@@ -340,7 +345,9 @@ useSwiper(featureCarousel, {
               />
             </u-link>
           </div>
-          <h2 class="font-bold text-6xl light:text-primary max-w-160">
+          <h2
+            class="font-bold text-3xl md:text-6xl light:text-primary max-w-160"
+          >
             <MDC :value="$t('pages.index.open_source.title')" unwrap="p" />
           </h2>
 
