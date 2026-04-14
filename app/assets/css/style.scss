@@ -1,0 +1,60 @@
+body {
+  color: var(--ui-text-highlighted);
+
+  ::selection {
+    background: var(--ui-color-primary-500);
+    color: #fff;
+  }
+
+  /* Required for older versions of Firefox */
+  ::-moz-selection {
+    background: var(--ui-color-primary-500);
+    color: #000;
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -5;
+    background-color: var(--color-body);
+  }
+}
+
+.hover\:highlighted {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      155deg,
+      color-mix(in srgb, var(--ui-color-primary-50) 50%, transparent) 0%,
+      transparent 100%
+    );
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.dark .hover\:highlighted {
+  &::before {
+    background: linear-gradient(
+      155deg,
+      color-mix(in srgb, var(--ui-color-primary-50) 7%, transparent) 0%,
+      transparent 100%
+    );
+  }
+}
+
+.dark .text-primary {
+  color: var(--ui-color-primary-400);
+}

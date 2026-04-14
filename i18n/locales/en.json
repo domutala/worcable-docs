@@ -1,0 +1,332 @@
+{
+  "words": {
+    "know_more": "En savoir plus"
+  },
+
+  "pages": {
+    "index": {
+      "hero_0": {
+        "badge": "🚀 **Open Source** & Free",
+        "title": "Open Source recruitment, without compromise",
+        "subtitle": "Manage your job listings, centralize applications, and automate your hiring process with a **modern**, **high-performance**, and **transparent** platform.",
+        "cta_primary": "Get started",
+        "cta_secondary": "Documentation"
+      },
+      "hero": {
+        "badge": "L'alternative **Open Source** aux ATS propriétaires",
+        "title": "Reprenez le contrôle total sur vos recrutements.",
+        "subtitle": "Worcable allie la souveraineté de l'Open Source à une performance native. Déployez votre propre infrastructure de talent sans vendor lock-in.",
+        "cta_primary": "Lancer Worcable",
+        "cta_secondary": "Voir sur GitHub"
+      },
+
+      "features_0": {
+        "badge": "Features",
+        "title": "Everything you need to **hire**",
+        "items": {
+          "management": {
+            "title": "Job Management",
+            "description": "Create detailed job descriptions with an editor **optimized for SEO** and Google Jobs."
+          },
+          "pipeline": {
+            "title": "Candidate Tracking",
+            "description": "View your pipeline at a glance. Manage every step, from **first contact** to **hiring**."
+          },
+          "forms": {
+            "title": "Dynamic Forms",
+            "description": "Customize your questionnaires to collect the data that **really matters** for each role."
+          },
+          "performance": {
+            "title": "Native Performance",
+            "description": "**Lighthouse score 100**. Your job listings load instantly, even on slow mobile networks."
+          }
+        }
+      },
+      "features": {
+        "badge": "Fonctionnalités Métier",
+        "title": "Tout ce dont vous avez besoin pour **recruter**",
+        "description": "Une interface pensée pour l'action, qui transforme la complexité du recrutement en un processus fluide et collaboratif.",
+        "items": {
+          "pipeline": {
+            "title": "Pipeline de Recrutement Dynamique",
+            "description": "Visualisez et pilotez vos talents via un Kanban intuitif et entièrement personnalisable. Suivez l'évolution de chaque candidat en temps réel, de la prise de contact initiale jusqu'à la signature finale, avec une fluidité totale."
+          },
+          "cv_parser": {
+            "title": "CVthèque Intelligente & IA",
+            "description": "Centralisez et valorisez votre propre base de talents. Notre moteur d'analyse extrait automatiquement les données clés de vos CV pour vous offrir un scoring précis et une recherche multicritères ultra-rapide parmi vos candidats."
+          },
+          "collaboration": {
+            "title": "Collaboration & Feedback",
+            "description": "Alignez enfin vos équipes RH et vos managers techniques. Centralisez les avis, partagez des scorecards d'évaluation et communiquez directement sur les fiches candidats pour prendre des décisions d'embauche plus justes et plus rapides."
+          },
+          "career_site": {
+            "title": "Site Carrière & Visibilité",
+            "description": "Attirez les meilleurs talents avec un portail carrière haute performance. Profitez d'une expérience candidat irréprochable sur mobile et d'une indexation native sur Google Jobs pour maximiser la portée de vos annonces sans effort."
+          }
+        }
+      },
+
+      "advantages_0": {
+        "badge": "Why us?",
+        "title": "The power of **modern** architecture",
+        "items": {
+          "control": {
+            "title": "Full Control",
+            "description": "Host your data on **your own infrastructure**. Total privacy guaranteed."
+          },
+          "dx": {
+            "title": "Developer Experience",
+            "description": "Modern stack: **Nuxt 3**, **Tailwind CSS**, and **MongoDB** for maximum agility."
+          },
+          "simplicity": {
+            "title": "Simplicity",
+            "description": "A clean interface to focus on what matters most: **your future talent**."
+          }
+        }
+      },
+      "advantages": {
+        "badge": "L'avantage Worcable",
+        "title": "La puissance d'une architecture **orientée souveraineté**",
+        "items": {
+          "control": {
+            "title": "Contrôle & Souveraineté",
+            "description": "Hébergez vos données sur **votre propre infrastructure**. Assurez une confidentialité absolue et une conformité RGPD totale, sans verrouillage propriétaire."
+          },
+          "dx": {
+            "title": "Un choix technique stratégique",
+            "description": "Une architecture moderne (**Nuxt 3**, **NestJS**, **Python**) optimisée pour la performance et une intégration fluide de l'IA."
+          },
+          "simplicity": {
+            "title": "Documentation & Vitesse",
+            "description": "Une **documentation exhaustive** pour une mise en production record et une prise en main immédiate par vos équipes techniques et RH."
+          }
+        }
+      },
+
+      "open_source_0": {
+        "badge": "Truly Open Source",
+        "title": "More than software, an **open standard**",
+        "content": "Worcable is not a black box. It's a community-driven project where every line of code is **auditable**. Avoid vendor lock-in and evolve the tool according to **your real needs**.",
+        "contribute": "Become a contributor"
+      },
+      "open_source": {
+        "badge": "Truly Open Source",
+        "title": "Le recrutement comme du code",
+        "content": "L'Open Source n'est pas seulement un choix technique, **c'est une stratégie business**. Pas de frais par licence, une extensibilité infinie via API, et la **garantie que vos données de recrutement vous appartiennent pour toujours**.",
+        "cta_primary": "Contribuer",
+        "cta_secondary": "Why open source"
+      },
+
+      "deployment": {
+        "badge": "Infrastructure & Ops",
+        "title": "Un déploiement **maîtrisé** en quelques secondes",
+        "description": "Déployez en 60 secondes. Grâce à notre **CLI interactif**, l'installation sur votre propre infrastructure (VPS, Cloud, On-premise) est un jeu d'enfant. Gardez le contrôle total sur votre base de données MongoDB et assurez une conformité RGPD native sans effort.",
+        "cta_primary": "Lancer l'installation"
+      }
+    },
+
+    "why_open_source": {
+      "hero": {
+        "badge": "Philosophie **Open Source**",
+        "title": "Vos données de recrutement doivent vous appartenir. **Point.**",
+        "subtitle": "Worcable repose sur une conviction simple : le recrutement est trop **stratégique** pour être enfermé dans un logiciel propriétaire. Reprenez le contrôle avec une plateforme **ouverte**, **auditable** et **extensible**.",
+        "cta_primary": "Commencer",
+        "cta_secondary": "Voir sur GitHub"
+      },
+
+      "problem": {
+        "title": "Le vrai coût des **ATS propriétaires**",
+        "description": "La plupart des outils de recrutement sont des **boîtes noires**. Vous payez plus à mesure que vous grandissez, vos données sont **enfermées**, et vos process dépendent d’une **roadmap que vous ne contrôlez pas**. Ce qui semble simple au départ devient rapidement un **frein**."
+      },
+
+      "pillars": {
+        "badge": "Pourquoi l’**Open Source**",
+        "title": "L’Open Source n’est pas une feature. C’est une **stratégie**.",
+        "items": {
+          "ownership": {
+            "title": "**Souveraineté des données**",
+            "description": "Vos candidats, vos données. Hébergez tout sur votre **propre infrastructure** et gardez un **contrôle total** sur des informations critiques."
+          },
+          "no_lockin": {
+            "title": "**Zéro vendor lock-in**",
+            "description": "Partez quand vous voulez. Faites évoluer l’outil à votre rythme, sans dépendre des **limitations d’un éditeur SaaS**."
+          },
+          "transparency": {
+            "title": "**Transparence totale**",
+            "description": "Chaque ligne de code est **auditable**. Comprenez exactement comment vos données sont **traitées**, **stockées** et **sécurisées**."
+          },
+          "extensibility": {
+            "title": "**Extensibilité infinie**",
+            "description": "Adaptez Worcable à vos besoins métier. Ajoutez vos modules, connectez vos outils, construisez votre **propre système de recrutement**."
+          }
+        }
+      },
+
+      "comparison": {
+        "badge": "**Open vs Closed**",
+        "title": "Deux visions du recrutement",
+        "items": {
+          "closed": {
+            "title": "**ATS SaaS classiques**",
+            "points": [
+              "Coût **par utilisateur récurrent**",
+              "**Personnalisation limitée**",
+              "**Roadmap imposée**",
+              "Données hébergées **chez un tiers**",
+              "**Architecture opaque**"
+            ]
+          },
+          "open": {
+            "title": "**Worcable (Open Source)**",
+            "points": [
+              "**Pas de licence**",
+              "**100% personnalisable**",
+              "Évolution **portée par vous**",
+              "**Déploiement libre** (VPS, cloud, on-premise)",
+              "**Architecture transparente**"
+            ]
+          }
+        }
+      },
+
+      "technical": {
+        "badge": "Pour les **CTO & Développeurs**",
+        "title": "Pensé comme un **vrai produit d’ingénierie**",
+        "description": "Stack moderne, architecture **modulaire** et approche **API-first**. Worcable n’est pas seulement open source — il est conçu pour être **étendu**, **déployé** et **scalé** en production.",
+        "items": {
+          "stack": {
+            "title": "**Stack moderne**",
+            "description": "**Nuxt 3**, **NestJS**, **MongoDB**, **Python**. Une base **robuste** et **évolutive**."
+          },
+          "deployment": {
+            "title": "**Déploiement flexible**",
+            "description": "Installez sur votre **VPS**, **cloud** ou en local avec **Docker** et un **CLI interactif**."
+          },
+          "api": {
+            "title": "**API First**",
+            "description": "Intégrez Worcable facilement dans votre écosystème avec une **API claire** et **extensible**."
+          }
+        }
+      },
+
+      "vision": {
+        "badge": "**Vision**",
+        "title": "**Recruitment as Code**",
+        "description": "Le recrutement doit être **versionnable**, **auditable** et **adaptable** — comme votre code. Worcable applique les **principes de l’ingénierie** au recrutement."
+      },
+
+      "cta": {
+        "title": "Arrêtez de **louer** votre infrastructure de recrutement.",
+        "description": "Commencez à la **construire**.",
+        "primary": "Lancer Worcable",
+        "secondary": "Contribuer"
+      }
+    }
+  },
+
+  "features": {
+    "pipeline": {
+      "title": "Pipeline Dynamique",
+      "description": "Un Kanban ultra-réactif conçu en Vue.js pour une gestion fluide des candidats. Personnalisez vos étapes de recrutement pour coller à la réalité de vos process métiers."
+    },
+    "cv_parser": {
+      "title": "CVthèque & IA",
+      "description": "Moteur d'extraction Python haute précision. Transformez vos PDF en données structurées exploitables instantanément grâce à notre technologie de parsing propriétaire."
+    },
+    "candidate_management": {
+      "title": "Gestion des Candidats",
+      "description": "Fiches profil enrichies avec historique complet des interactions. Une source de vérité unique pour centraliser chaque point de contact."
+    },
+    "collaboration": {
+      "title": "Collaboration & Permissions",
+      "description": "Système de rôles granulaire (Admin, Recruteur, Manager). Partagez vos feedbacks et évaluez vos talents en équipe sans friction."
+    },
+    "communication": {
+      "title": "Communication Centralisée",
+      "description": "Éliminez les silos. Gérez tous vos échanges mails et messages directement depuis l'interface pour une traçabilité totale."
+    },
+    "job_distribution": {
+      "title": "Diffusion des Offres",
+      "description": "Multidiffusion simplifiée sur vos canaux stratégiques. Maximisez votre visibilité tout en gardant une interface de gestion unifiée."
+    },
+    "security": {
+      "title": "Sécurité & Auditabilité",
+      "description": "Transparence totale du code source. Auditez, sécurisez et maîtrisez votre stack de recrutement conformément aux exigences RGPD les plus strictes."
+    },
+    "deployment": {
+      "title": "Déploiement Souverain",
+      "description": "Approche Docker-first et CLI interactif. Installez Worcable sur vos propres serveurs en quelques secondes pour une indépendance technique absolue."
+    },
+    "career_site": {
+      "title": "Site Carrière Haute Performance",
+      "description": "Propulsé par Nuxt 3. Profitez d'un SEO Google Jobs natif et de temps de chargement records pour convertir vos visiteurs en candidats."
+    },
+    "ai_matching": {
+      "title": "Matching Intelligent",
+      "description": "Algorithmes de scoring basés sur l'IA pour identifier les meilleurs profils. Gagnez un temps précieux en priorisant les candidatures les plus pertinentes."
+    }
+  },
+
+  "header": {
+    "why_open_source": { "title": "Why Open Source" },
+    "developers": { "title": "Developers" },
+    "api": { "title": "Api" },
+
+    "book_demo": "Book Demo",
+    "get_started": "Get Started"
+  },
+
+  "footer": {
+    "group": {
+      "about": {
+        "title": "About",
+        "why_open_source": "Why Open Source",
+        "contact": "Contact"
+      },
+      "resources": {
+        "title": "Resources",
+        "dcos": "Documentation",
+        "roadmap": "Roadmap",
+        "pricing": "Pricing",
+        "support": "Support",
+        "security": "Security"
+      },
+      "services": {
+        "title": "Services",
+        "core_app": "Core Application",
+        "cvarser": "CVParser",
+        "notifications": "Notifications",
+        "all": "All Services"
+      },
+      "legal": {
+        "title": "Legal",
+        "licence": "License",
+        "cug": "Terms of Use",
+        "privacy": "Privacy Policy"
+      }
+    }
+  },
+
+  "content": {
+    "soon": {
+      "text": "We are actively working on this section to provide you with the best possible resources. Do you have expertise in this area? We’d love your help! You can contribute directly to improving this guide by submitting a Pull Request or sharing your suggestions."
+    },
+
+    "toc": {
+      "title": "Table of Contents",
+
+      "bottom": {
+        "title": "Community",
+        "star_on_github": "Star on GitHub",
+        "playground": "Playground",
+        "edit_this_page": "Edit this page"
+      }
+    }
+  },
+
+  "book_demo": {
+    "title": "The next-generation **open source** recruitment platform.",
+    "description": "Prefer a personalized demo or a turnkey solution? Let’s discuss your hiring needs.",
+    "cta": "Book a demo"
+  }
+}
