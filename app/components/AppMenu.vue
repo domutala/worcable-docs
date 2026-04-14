@@ -7,7 +7,6 @@ const localePath = useLocalePath();
 
 const items = ref<NavigationMenuItem[]>([
   {
-    icon: "i-lucide-badge-check",
     label: $t("header.why_open_source.title"),
     to: localePath({ name: "why-open-source" }),
   },

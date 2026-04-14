@@ -1,6 +1,8 @@
 {
   "words": {
-    "know_more": "En savoir plus"
+    "know_more": "En savoir plus",
+    "employe": "Employé | Employés | {prefix} Employés",
+    "employes": "{prefix} Employés"
   },
 
   "pages": {
@@ -265,6 +267,145 @@
     "ai_matching": {
       "title": "Matching Intelligent",
       "description": "Algorithmes de scoring basés sur l'IA pour identifier les meilleurs profils. Gagnez un temps précieux en priorisant les candidatures les plus pertinentes."
+    }
+  },
+
+  "contact": {
+    "title": "Discutons de votre projet",
+
+    "items": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "companyName": "Entreprise",
+      "companySize": "Taille de l'entreprise",
+      "message": "Message"
+    },
+
+    "companySize": {
+      "-20": "Moins de 20 employés",
+      "21-250": "Entre 20 et 250 employés",
+      "251-2000": "Entre 250 et 2000 employés",
+      "+2000": "plus de 2000 employés"
+    },
+
+    "errors": {
+      "firstName": {
+        "required": "Le prénom est obligatoire",
+        "invalid": "Le prénom doit être une chaîne de caractères",
+        "min": "Le prénom doit contenir au moins 2 caractères"
+      },
+      "lastName": {
+        "required": "Le nom est obligatoire",
+        "invalid": "Le nom doit être une chaîne de caractères",
+        "min": "Le nom doit contenir au moins 2 caractères"
+      },
+      "email": {
+        "required": "L’adresse email est obligatoire",
+        "invalid": "Veuillez saisir une adresse email valide"
+      },
+      "companyName": {
+        "required": "Le nom de l’entreprise est obligatoire",
+        "min": "Le nom de l’entreprise doit contenir au moins 2 caractères"
+      },
+      "companySize": {
+        "required": "Veuillez sélectionner la taille de l’entreprise"
+      },
+      "message": {
+        "required": "Le message est obligatoire",
+        "min": "Le message doit contenir au moins 10 caractères",
+        "max": "Le message ne doit pas dépasser 1000 caractères"
+      }
+    },
+
+    "submit": "Envoyer",
+
+    "success": "Bien reçu ! Merci de l'intérêt que vous portez à mon travail. Je prends connaissance de vos besoins et je reviens vers vous dans les plus brefs délais pour en discuter. Excellente journée."
+  },
+
+  "contacts": {
+    "form": {
+      "firstName": {
+        "label": "Prénom",
+        "placeholder": "Entrez votre prénom",
+        "errors": {
+          "required": "Le prénom est requis",
+          "invalid": "Le prénom est invalide",
+          "min": "Le prénom doit contenir au moins 2 caractères"
+        }
+      },
+
+      "lastName": {
+        "label": "Nom",
+        "placeholder": "Entrez votre nom",
+        "errors": {
+          "required": "Le nom est requis",
+          "invalid": "Le nom est invalide",
+          "min": "Le nom doit contenir au moins 2 caractères"
+        }
+      },
+
+      "email": {
+        "label": "E-mail",
+        "placeholder": "Entrez votre adresse e-mail",
+        "errors": {
+          "required": "L'e-mail est requis",
+          "invalid": "L'e-mail est invalide",
+          "invalidEmail": "Adresse email invalide"
+        }
+      },
+
+      "message": {
+        "label": "Message",
+        "placeholder": "Écrivez votre message ici...",
+        "errors": {
+          "required": "Le message est requis",
+          "invalid": "Le message est invalide",
+          "min": "Le message doit contenir au moins 10 caractères",
+          "max": "Le message ne doit pas dépasser 1000 caractères"
+        }
+      },
+
+      "companyName": {
+        "label": "Nom de l'entreprise",
+        "placeholder": "Entrez le nom de votre entreprise",
+        "errors": {
+          "required": "Le nom de l'entreprise est requis",
+          "invalid": "Le nom de l'entreprise est invalide"
+        }
+      },
+
+      "companySize": {
+        "label": "Taille de l'entreprise",
+        "placeholder": "Sélectionnez la taille de votre entreprise",
+        "errors": {
+          "required": "La taille de l'entreprise est requise",
+          "invalid": "La taille de l'entreprise est invalide"
+        }
+      },
+
+      "errors": {
+        "required": "Ce champ est requis",
+        "invalidEmail": "Adresse email invalide"
+      }
+    },
+
+    "contact": {
+      "title": "Contactez-nous",
+      "success": "Parfait, votre message a bien été reçu.\n\nEn tant qu’équipe open source, nous accordons une attention particulière à chaque contribution et demande de notre communauté.\n\nNous analysons votre message avec soin afin de vous apporter une réponse pertinente, transparente et adaptée à vos besoins. \n\n**Nous revenons vers vous très rapidement par email.**",
+      "submit": "Envoyer"
+    },
+
+    "messages": {
+      "success": "Votre message a bien été transmis à notre équipe, qui reviendra vers vous dès que possible.",
+      "error": "Oups… une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer dans quelques instants ou nous contacter directement par (email)[hello{'@'}wircable.space]."
+    },
+
+    "book_demo": {
+      "title": "Réserver une démo",
+      "description": "Nous vous rappellons sous 24h (les jours ouvrables de 9h30 à 18h30) pour planifier une démo de Worcable.",
+      "success": "Merci pour votre demande de démonstration.\n\nEn tant qu’équipe open source, nous sommes ravis de vous accompagner dans la découverte de notre solution.\n\nNous préparons une présentation personnalisée adaptée à vos besoins et reviendrons très rapidement vers vous pour convenir d’un créneau.\n\nÀ très bientôt !",
+      "submit": "Réservez une démo"
     }
   },
 

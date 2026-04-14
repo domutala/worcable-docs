@@ -13,11 +13,23 @@ export default defineAppConfig({
     },
 
     button: {
+      variants: {
+        variant: {
+          dark: "",
+        },
+      },
       compoundVariants: [
         {
           color: "primary",
           variant: "solid",
           class: "text-white",
+        },
+
+        {
+          color: "neutral",
+          variant: "dark",
+          class:
+            "text-white bg-black hover:bg-zinc-950 disabled:bg-zinc-950 aria-disabled:bg-zinc-950 light:hover:bg-zinc-900 light:disabled:bg-black light:aria-disabled:bg-black",
         },
       ],
     },

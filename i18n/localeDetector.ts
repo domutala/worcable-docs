@@ -1,3 +1,5 @@
+const SUPPORTED_LOCALES = ["en"];
+
 // Detect based on query, cookie, header
 export default defineI18nLocaleDetector((event, config) => {
   let locale = config.defaultLocale as string;
@@ -14,6 +16,10 @@ export default defineI18nLocaleDetector((event, config) => {
   if (header) locale = header.toString();
 
   locale = locale.split("-")[0] as string;
+
+  if (!SUPPORTED_LOCALES.includes(locale)) {
+    locale = SUPPORTED_LOCALES[0] as "en";
+  }
 
   return locale;
 });

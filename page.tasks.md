@@ -2,12 +2,12 @@
 
 [x] home
 [x] why-open-source
-[ ] contact
+[x] contact
 [ ] roadmap
 [ ] pricing
 [ ] support
 [ ] team
-[ ] book-demo
+[x] book-demo
 
 ## Legal
 [ ] licence
@@ -25,3 +25,14 @@
 [ ] deployment
 [ ] career_site
 [ ] ai-matching
+
+# Docs
+[ ] Get Started
+[ ] Create service
+[ ] Api intégration
+[ ] Déployment
+[ ] How to contribute
+[ ] How the Core works
+[ ] How service works
+
+

@@ -39,10 +39,10 @@
 
         <u-button
           :to="$localePath({ name: 'book-demo' })"
-          variant="soft"
-          color="primary"
+          variant="dark"
+          color="neutral"
           size="xl"
-          class="button mt-5 px-7 py-4 rounded-xl cursor-pointer bg-black text-white hover:bg-primary-950"
+          class="mt-5 px-7 py-4 rounded-xl cursor-pointer"
           icon="i-lucide-video"
         >
           {{ $t("book_demo.cta") }}
