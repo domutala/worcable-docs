@@ -22,15 +22,10 @@ export const Features: Features = {
     page: { name: "job-distribution" },
   },
   security: { icon: "i-lucide-shield-check", page: { name: "security" } },
-  deployment: { icon: "i-lucide-server", page: { name: "deployment" } },
+  deployment: {
+    icon: "i-lucide-server",
+    page: { name: "docs-slug", params: { slug: "deployment" } },
+  },
   career_site: { icon: "i-lucide-globe", page: { name: "career-site" } },
   ai_matching: { icon: "i-lucide-sparkles", page: { name: "ai-matching" } },
 };
-
-/**
-echo "<template></template>" > app/pages/why-open-source.vue
-echo "<template></template>" > app/pages/contact.vue
-echo "<template></template>" > app/pages/roadmap.vue
-echo "<template></template>" > app/pages/pricing.vue
-echo "<template></template>" > app/pages/support.vue
- */

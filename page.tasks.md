@@ -22,7 +22,7 @@
 [ ] communication
 [ ] job-distribution
 [ ] security
-[ ] deployment
+[x] deployment
 [ ] career_site
 [ ] ai-matching
 
@@ -30,7 +30,7 @@
 [ ] Get Started
 [ ] Create service
 [ ] Api intégration
-[ ] Déployment
+[x] Déployment
 [ ] How to contribute
 [x] How the Core works
 [ ] How service works

@@ -127,15 +127,14 @@ const links = computed(() => {
         :ui="{
           root: 'lg:grid-cols-12 lg:gap-10',
           center: 'lg:col-span-9',
-
           right:
             '-mx-0 sm:-mx-0 top-0 max-h-screen lg:col-span-3 lg:border-l lg:border-default sm:px-0',
         }"
         class="ui-doc-body"
       >
-        <u-container class="max-w-250 mx-auto py-5">
+        <u-container class="max-w- lg:ml-7 lg:mr-auto lg:max-w-10/12 py-5">
           <UPageBody>
-            <MDC v-if="page.description" :value="page.description" unwrap="p" />
+            <!-- <MDC v-if="page.description" :value="page.description" unwrap="p" /> -->
             <Soon v-if="!page.body.value.length" :page />
             <ContentRenderer v-else :value="page" />
           </UPageBody>
