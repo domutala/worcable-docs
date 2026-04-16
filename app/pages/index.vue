@@ -110,12 +110,16 @@ useSwiper(featureCarousel, {
 
     <div
       class="flex not-lg:flex-col lg:divide-x not-lg:divide-y divide-default border-t border-default"
+      v-reveal-group="{ once: true }"
+      enter-active-class="animate__animated animate__fadeInUp animate__faster"
+      leave-active-class="animate__fadeOut"
     >
       <AppLinkBox
         v-for="(advantage, code) in advantages"
         :label="$t('words.know_more')"
         :key="code"
         :to="$localePath(advantage.to)"
+        reveal-item
         class="border-default w-full group/link-anime px-5 md:px-10 py-5 flex flex-col gap-2 hover:highlighted"
       >
         <div>
@@ -182,32 +186,46 @@ useSwiper(featureCarousel, {
     </u-container>
   </Container>
   <Container>
-    <div class="flex flex-wrap divide-x divide-y divide-default">
-      <AppLinkBox
-        v-for="idx in features"
+    <div
+      class="flex flex-wrap divide-x divide-y divide-default overflow-hidden"
+      v-reveal-group="{ once: true }"
+      enter-active-class="animate__animated animate__fadeInUp animate__faster"
+      leave-active-class="animate__fadeOut"
+    >
+      <div
+        v-for="(idx, i) in features"
         :key="idx"
-        :to="$localePath(Features[idx]!.page)"
-        link-to-label
-        class="w-full md:w-1/2 flex flex-col text-left lg:nth-[3]:border-b-0 lg:nth-[2]:border-r-0 p-5 md:p-10"
+        class="overflow-hidden w-full md:w-1/2 flex flex-col text-left lg:nth-[3]:border-b-0 lg:nth-[2]:border-r-0 p-5 md:p-10"
       >
-        <div class="max-w-120 mb-auto pb-5">
-          <u-icon :name="Features[idx]?.icon" class="size-10 mb-4" />
+        <AppLinkBox
+          :to="$localePath(Features[idx]!.page)"
+          link-to-label
+          reveal-item
+          class="block"
+          :style="{ animationDelay: `${(i % 2) * 0.25}s` }"
+        >
+          <div
+            class="max-w-120 mb-auto pb-5"
+            :style="{ animationDelay: `${(i % 2) * 0.25}s` }"
+          >
+            <u-icon :name="Features[idx]?.icon" class="size-10 mb-4" />
 
-          <h3 class="text-xl font-blac text-primary">
-            <MDC
-              unwrap="p"
-              :value="$t(`pages.index.features.items.${idx}.title`)"
-            />
-          </h3>
+            <h3 class="text-xl font-blac text-primary">
+              <MDC
+                unwrap="p"
+                :value="$t(`pages.index.features.items.${idx}.title`)"
+              />
+            </h3>
 
-          <p class="mt-3 max-w-180">
-            <MDC
-              unwrap="p"
-              :value="$t(`pages.index.features.items.${idx}.description`)"
-            />
-          </p>
-        </div>
-      </AppLinkBox>
+            <p class="mt-3 max-w-180">
+              <MDC
+                unwrap="p"
+                :value="$t(`pages.index.features.items.${idx}.description`)"
+              />
+            </p>
+          </div>
+        </AppLinkBox>
+      </div>
     </div>
   </Container>
   <Container>

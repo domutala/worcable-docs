@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import { useClipboard } from "@vueuse/core";
-import _ from "lodash";
-
-const { repository, contribueUrl, docHomePage } = useAppConfig();
-const copy = useClipboard({});
-const { tm, te, rt } = useI18n();
+const { repository, contribueUrl } = useAppConfig();
 
 const whyOpenSourceIcons = {
   hero: { icon: "i-lucide-shield-check" },

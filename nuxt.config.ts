@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "nuxt-llms",
     "@nuxtjs/mcp-toolkit",
     "nuxt-swiper",
+    "nuxt-reveal",
   ],
 
   routeRules: {
@@ -88,7 +89,7 @@ export default defineNuxtConfig({
 
     locales: [
       { code: "en", name: "English", file: "en.json", dir: "ltr" },
-      // { code: "fr", name: "Français", file: "fr.json", dir: "ltr" },
+      { code: "fr", name: "Français", file: "fr.json", dir: "ltr" },
     ],
   },
 

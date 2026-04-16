@@ -4,15 +4,13 @@
   <!-- <UContainer class="max-w-full px-0 sm:px-0 lg:px-0 min-h-screen relative">
   </UContainer> -->
 
-  <UPage
-    class="ui-docs-page min-h-screen bg-default"
-    :ui="{ left: 'max-w-75' }"
-  >
-    <Container :ui="{ container: 'min-h-screen' }">
+  <UPage class="ui-docs-page min-h-screen bg-default">
+    <Container :ui="{ container: 'min-h-screen', content: 'border-x-0' }">
       <template #left>
         <UPageAside
           :ui="{
-            container: 'h-full flex flex-col',
+            root: 'w-max',
+            container: 'h-full flex flex-col max-w-70 ml-auto',
             topBody: 'px-0 mx-0',
             topHeader: 'px-0 mx-0',
             topFooter: 'px-0 mx-0',
@@ -32,13 +30,6 @@
               ></u-button>
             </div>
           </div>
-
-          <!-- bg-linear-to-tl from-surface/50 dark:from-surface/35 to-default -->
-          <!-- <template #top>
-            <div class="h-(--ui-header-height) flex items-center px-5"></div>
-          </template> -->
-
-          <!-- h-[calc(100vh-var(--ui-header-height))] top-(--ui-header-height) -->
           <DocNavigation class="pt-0 mt-5" />
         </UPageAside>
       </template>
@@ -54,11 +45,14 @@
 
       <slot />
 
-      <AppFooter />
+      <Container>
+        <AppFooter />
+      </Container>
 
-      <template #right>
+      <!-- <template #right>
         <div class="ml-auto xl:block hidden"></div>
       </template>
+    </Container> -->
     </Container>
   </UPage>
 

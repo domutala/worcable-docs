@@ -106,7 +106,7 @@ const links = computed(() => {
         <UPageHeader
           class="py-5"
           :title="page.title"
-          :ui="{ title: 'text-2xl sm:text-2xl' }"
+          :ui="{ title: 'text-2xl sm:text-2xl', root: 'border-b-0' }"
         >
           <template #links>
             <UButton
@@ -122,25 +122,20 @@ const links = computed(() => {
     </Container>
 
     <Container>
+      <!-- flex flex-col lg:grid lg:grid-cols-12 lg:gap-10 ui-doc-body -->
       <UPage
-        :ui="{ right: '-mx-0 sm:-mx-0 top-0 max-h-screen' }"
+        :ui="{
+          root: 'lg:grid-cols-12 lg:gap-10',
+          center: 'lg:col-span-9',
+
+          right:
+            '-mx-0 sm:-mx-0 top-0 max-h-screen lg:col-span-3 lg:border-l lg:border-default sm:px-0',
+        }"
         class="ui-doc-body"
       >
         <u-container class="max-w-250 mx-auto py-5">
-          <!-- <UPageHeader :title="page.title" :description="page.description">
-            <template #links>
-              <UButton
-                v-for="(link, index) in page.links"
-                :key="index"
-                v-bind="link"
-              />
-
-              <PageHeaderLinks />
-            </template>
-          </UPageHeader> -->
-
           <UPageBody>
-            <!-- <MDC v-if="page.description" :value="page.description" unwrap="p" /> -->
+            <MDC v-if="page.description" :value="page.description" unwrap="p" />
             <Soon v-if="!page.body.value.length" :page />
             <ContentRenderer v-else :value="page" />
           </UPageBody>
@@ -151,19 +146,20 @@ const links = computed(() => {
             :title="$t(toc?.title)"
             :links="page.body?.toc?.links"
             :ui="{
-              indicator: 'ms-1 light:bg-primary-950',
-              content: '[&>ul]:ms-1',
+              indicator: 'ms-0',
+              list: 'ms-0 border-s-0',
             }"
-            class="top-(--ui-max-header-height)"
+            highlight
+            highlight-color="primary"
+            class="top-(--ui-header-height)"
           >
-            <!-- group relative text-sm flex items-center focus-visible:outline-primary py-1 text-muted hover:text-default transition-colors -->
             <template #leading>
-              <u-icon name="i-lucide-text" class="size-5.5" />
+              <u-icon name="i-lucide-text" class="size-5.5 ml-3.5" />
             </template>
 
             <template v-if="toc?.bottom" #bottom>
               <div
-                class="hidden lg:block space-y-6"
+                class="hidden lg:block space-y-6 px-4"
                 :class="{ 'mt-6!': page.body?.toc?.links?.length }"
               >
                 <USeparator

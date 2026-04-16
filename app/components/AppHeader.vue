@@ -5,8 +5,10 @@
     class="border-b-0 bg-transparent"
     mode="slideover"
     :ui="{
-      center: 'flex-1',
-      container: 'max-w-full',
+      left: 'lg:flex-none',
+      right: 'ml-auto',
+      center: 'flex-1 ml-5',
+      container: 'max-w-full justify-start',
       content: 'max-w-80 ui-scroll overflow-auto',
     }"
     :to="$localePath({ name: 'index' })"

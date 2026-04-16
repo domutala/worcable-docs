@@ -32,7 +32,7 @@
 [ ] Api intégration
 [ ] Déployment
 [ ] How to contribute
-[ ] How the Core works
+[x] How the Core works
 [ ] How service works
 
 

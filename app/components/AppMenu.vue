@@ -77,6 +77,14 @@ const items = ref<NavigationMenuItem[]>([
     }),
   },
 
+  {
+    label: "Blog",
+  },
+
+  {
+    label: "About",
+  },
+
   // {
   //   label: "GitHub",
   //   icon: "i-simple-icons-github",

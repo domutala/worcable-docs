@@ -1,6 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
+  <Container
+    class="fixed inset-0 -z-1"
+    :ui="{ content: 'h-full', container: 'h-full' }"
+  >
+  </Container>
+
   <!-- <Container class="hidden" :ui="{ content: 'min-h-8' }">
     <div class="bg-primary text-black p-5 relative">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae placeat

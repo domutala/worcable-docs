@@ -23,7 +23,7 @@ defineProps<{
       <div
         data-slot="content"
         :class="ui?.content"
-        class="app-container--content border-default border-x max-w-340 w-full relative"
+        class="app-container--content border-default border-x max-w-(--ui-app-container) w-full relative"
       >
         <slot />
       </div>
